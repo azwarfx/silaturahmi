@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <!-- <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
 </body>
@@ -92,6 +92,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
 <head lang="en">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
     <meta charset="UTF-8">
     <title>Welcome to NaisFramework</title>
 </head>
@@ -118,6 +122,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         margin-top : 0;
     }
 
+	/* css */
+
+	.big-btn{
+padding: 10px 0px 11px 0px;
+width: 215px;
+margin-top:5px;
+}
+
+.big-btn i{
+font-size: 65px;
+margin-right: 0px !important;
+}
+.big-btn strong{
+font-size: 25px;
+text-shadow: 1px 2px 0px #34659B;
+color: #fff;
+line-height: 24px;
+}
+.big-btn .btn-text{
+margin-top:6px;
+}
+
+.big-btn small{font-size: 75%;}
+
+.android-btn{
+
+width: 240px;
+padding: 13px 17px 13px 0px;
+background-color: #000;
+border-color: #000;
+
+}
+.android-btn:hover{
+background-color: #272727;
+}
+
+.android-btn i{
+font-size: 55px;
+}
+
+.android-btn .btn-text{
+margin-top: 0px;
+}
+
+.android-btn strong{
+font-size: 25px;
+text-shadow: none;
+color: #fff;
+line-height: 24px;
+}
+
+.windows-btn{
+background-color:#008A00;
+width: 235px;
+padding: 13px 5px 13px 10px;
+border-color: #055805;
+}
+
+.windows-btn:hover{
+background-color: #008A00;
+}
+.windows-btn .btn-text{
+text-shadow: none;
+font-size: 26px;
+line-height: 25px;
+}
+
+
 </style>
 
 <body>
@@ -127,5 +199,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </h1>
 <h3>Indonesian Social Media</h3>
 
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-md-6">
+        <h2>Store Icons</h2>
+        <p class="text-warning"><strong>Note: </strong>Use Related Fonts to get better results</p>
+       
+        </div>
+	</div> -->
+    <div class="row">
+        
+        <div class="col-md-12">
+           <!-- apple store button -->
+                <a class="btn btn-lg btn-primary big-btn" href="#">
+  				<i class="glyphicon glyphicon-phone pull-left"></i><div class="btn-text"><small>Available on the</small><br><strong>App Store</strong></div></a>
+            <!-- android button -->
+  				<a class="btn btn-lg btn-success big-btn android-btn" href="#">
+  				<img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>
+            <!-- windows store button -->
+                <!-- <a class="btn btn-lg btn-success big-btn windows-btn" href="#">
+  				<img width="60px" class="pull-left" src="http://1.bp.blogspot.com/-rD2_M6Vvv6w/UbmywLq5V8I/AAAAAAAACko/BEcR4QqtkRI/s1600/Windows%2BStore%2BLogo.png"><div class="btn-text">Windows<br>Store</div></a>
+                    -->
+            
+        </div>
+    </div>
+<!-- </div> -->
 </body>
 </html>
