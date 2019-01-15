@@ -97,7 +97,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
     <meta charset="UTF-8">
-    <title>Welcome to NaisFramework</title>
+    <title>Welcome to Silaturahmi</title>
 </head>
 
 <style type="text/css">
